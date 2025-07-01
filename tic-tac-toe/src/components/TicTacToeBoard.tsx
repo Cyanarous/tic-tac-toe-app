@@ -104,7 +104,7 @@ export default function TicTacToeBoard() {
           {winner
             ? <span className={winner === "X" ? "text-red-600 dark:text-red-300 font-bold" : "text-blue-600 dark:text-blue-300 font-bold"}>Winner: {winner}!</span>
             : board.every(Boolean)
-            ? <span className="text-zinc-600 dark:text-zinc-300 font-bold">It's a draw!</span>
+            ? <span className="text-zinc-600 dark:text-zinc-300 font-bold">It&apos;s a draw!</span>
             : <span className="text-zinc-500 dark:text-zinc-400">Current Player: <span className={currentPlayer === "X" ? "text-red-600 dark:text-red-300 font-bold" : "text-blue-600 dark:text-blue-300 font-bold"}>{currentPlayer}</span></span>}
         </div>
         <Button onClick={resetGame} variant="secondary" className="mt-2 w-32">Reset</Button>
